@@ -852,6 +852,7 @@ export interface ApiOrderOrder extends Schema.CollectionType {
     userId: Attribute.Integer;
     paymentId: Attribute.String;
     orderItemList: Attribute.Component<'ordere-item.ordered-item', true>;
+    Status: Attribute.String & Attribute.DefaultTo<'Pending'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
